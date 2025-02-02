@@ -1,10 +1,12 @@
 :root {
-    --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
-    --color-tertiary: #C4C4C4;
-    --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-primary: #212125;
+    --color-secondary: #239D60;
+    --color-tertiary: #A3DE83;
+    --color-button: #E57B5C;
+    --color-button-hover: #BE4747;
+    --color-button-hover-2: #309145;
     --color-text: #444444;
+    --color-text-2: #206A5D;
     --color-white: #FFFFFF;
 }
 
@@ -122,8 +124,9 @@ button {
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: #00FFAB;
 }
+
 
 /* Listas */
 ul {
@@ -167,23 +170,33 @@ ul {
     gap: 16px;
 }
 
-.button-draw-2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.button-draw-2:hover {
-    background-color: #45a049;
-}
 
 .hidden {
     display: none;
+}
+
+/* boton resetear el juego*/
+
+.button-resetear {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    
+    color: var(--color-white);
+    background-color: var(--color-button);
+    
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+
+    
+}
+
+.button-resetear img {
+    margin-right: 40px;
+}
+
+.button-resetear:hover {
+    background-color: var(--color-button-hover-2);
 }

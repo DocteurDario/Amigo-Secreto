@@ -19,10 +19,12 @@
         
         <section class="input-section">
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre" maxlength="20">
-                <button class="button-add" onclick="agregarAmigo()" id="agregar">Añadir</button>
-            </div>
+                <div class="input-wrapper">
+                    <input type="text" id="amigo" class="input-name" pattern="[A-Za-z\s]+" placeholder="Escribe un nombre" maxlength="20" required>
+                    <button class="button-add" onclick="agregarAmigo()" id="agregar">Añadir</button>
+                </div>
+          
+
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
@@ -34,7 +36,7 @@
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
-                <button id="btnReiniciar" class="button-draw-2" onclick="reiniciarJuego()" aria-label="Reiniciar juego" style="display: none;">
+                <button id="btnReiniciar" class="button-resetear" onclick="reiniciarJuego()" aria-label="Reiniciar juego" style="display: none;">
                     <img src="assets/play_circle_outline.png" alt="Ícono para reiniciar" width="20" height="20"> Reiniciar
                 </button>
             </div>
